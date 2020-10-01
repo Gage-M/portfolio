@@ -189,6 +189,10 @@ body{
     justify-content: space-between;
 }
 
+.card_img{
+    object-fit: contain;
+}
+
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
 
 
