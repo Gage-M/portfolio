@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Lato&family=Merriweather+Sans:wght@300&display=swap');
+/*
+    COLOR PALETTE
+
+    [pick one _orange tree_]
+
+    #000409 - BLACK [font color ? ] 
+    #0A704E - deep leaf green [main background color]
+    #6F9D80 - fog green [font place background color] 
+    #FB8B00 - sunrise orange 
+    #FA7711 - deep flower orange
+    #F34508 - deep fruit orange [header fount color]
+
+    [pick 2 winter pine]
+
+    #020f01 black
+    #1a4709 deep pine green
+    #4e7934 lighter ash green
+    #ffffff white
+    #89b4ad deep steel blue
+
+
+    [font]
+    #c6ff00
+
+    [background]
+    
+*/
+
+
+/*
+
+    FONT 
+
+font-family: 'Kanit', sans-serif;
+
+font-family: 'Lato', sans-serif;
+
+font-family: 'Merriweather Sans', sans-serif;
+
+
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #32333B ;
+    color: #DFDFDF;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif ;
+}
+
+.header_wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.section_header{
+    color: #c6ff00;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.name_header{
+    font-family: 'Kanit', sans-serif;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*=*  HEADER - INTRO  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+.header{
+    background-image: url('./img/background/shattered-island.gif');
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    padding: 1rem;
+}
+
+.name_wrapper{
+    color: #ffffff;
+}
+
+.link_wrapper{
+    text-decoration: none;
+    color: #4e7934;
+    display: flex;
+}
+
+.link_spacer{
+    margin: 1rem;
+}
+
+.section_links{
+    color: #c6ff00;
+    transition: .4s;   
+    text-decoration: none;   
+}
+
+.section_links:hover{
+    color: #95a19f ;
+}
+
+.ew_this_guy{
+    width: 62vw;
+    border-radius: 150px;
+    height: 33vh;
+    object-fit: cover;
+    border: thin solid #95a19f;  
+}
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*==*=*=  summary  =*=*=*=*=*=*=*=*=*=*=*=*=*==*=*=*/
+.summary_section {
+    display: flex;
+    max-width: 1400px;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=   Cards - Projects  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*========================== CARDS ==========================*/
+.project_cards_holder{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.card{
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   height: 37rem;
+   min-height: 500px;
+   width: 7rem; /*change size for desktop*/
+   min-width: 250px;
+   padding: 1.5rem;
+
+   border-radius: 16px;
+   background: #b0ff57 ;
+   /* background: #7EA964; */
+   color: #0D2636;
+   box-shadow: -1rem 0 3rem #000;
+
+   transition: .7s;
+}
+
+/*how much target card moves*/
+.card:hover{
+    transform: translateX(-1rem);
+}
+/*how much every other card moves*/
+.card:hover~.card{
+    transform: translateY(30rem);
+}
+/*init over lap*/
+.card:not(:last-child){
+    margin-bottom: -500px;
+}
+
+.stack_wrap{
+    display: grid;
+    grid-row: auto;
+}
+
+.stack_info{
+    color: #0D2636;
+    border: thin solid #ffffff;
+    border-radius: 8px;
+    margin: .2rem;
+    padding: .1rem;
+    height: 20px;
+    width: 12rem;
+    min-width: 150px;
+}
+/*=*=*=*=*= SUB CAT of projects *=*=*=*=*/
+
+.img_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*  Skills  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+.skills{
+    display: flex;
+    flex-direction: column; 
+}
+
+.skill_wrap{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.category_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid #95a19f;
+    margin-bottom: 1.2rem; 
+    padding-bottom: .5rem;
+}
+
+.skill_label{
+    margin-bottom: .4rem;
+}
+
+.skill_split_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= contact/hyperlink hub*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+.contact_footer{
+    border-top: solid thin #c6ff00;
+    margin-top: 3rem;
+    background: url('./img/background/shattered-island.gif');
+}
+
+.contact_section{}
+
+.contact_header{
+    text-align: center;
+    color: #c6ff00;
+}
+
+.contact_info_wrap{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+.contact_wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link_labels{
+    margin: .8rem;
+}
+
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= DESKTOP *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+
+
+@media all and ( min-width: 600px){
+
+    /*hero... or w/e it's called. the about me section... yeah that sounds right */
+
+    .ugly_bastard_wrapper{
+        display: flex;
+        justify-content: center;
+        margin: 3rem;
+    }
+
+    .section_header{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .ew_this_guy{
+        width: 15rem;
+        min-width: 5rem;
+        height: 15rem;
+        border-radius: 100rem;
+    }
+
+    .info_wrapper{
+        font-size: 1.05rem;
+        text-align: center;
+        max-width: 40rem;
+    }
+
+    .summary_section{
+        margin-top: 5rem;
+        place-content: center;
+    }
+
+
+    /*card <desk>*/
+
+    .project_cards_holder{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        height: 50vh;
+        justify-content: center;
+    }
+    
+    .card{
+       display: flex;
+       position: relative;
+       flex-direction: column;
+       height: 37rem;
+       min-height: 500px;
+       width: 10rem; 
+       min-width: 400px;
+
+    
+       transition: .3s;
+    }
+    
+    /*how much target card moves*/
+    .card:hover{
+        transform: translateY(-1rem);
+    }
+    /*how much every other card moves*/
+    .card:hover~.card{
+        transform: translateX(7.5rem);
+    }
+    /*init over lap*/
+    .card:not(:first-child){
+        margin-left: -130px;
+    }
+    /* SKILLS */
+
+    .skills{
+        padding-top: 10rem;
+
+        justify-content: center;
+    }
+
+    .skill_category_wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill_category{
+        margin: 0 5rem 0 5rem;
+    }
+
+}
