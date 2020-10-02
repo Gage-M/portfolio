@@ -52,6 +52,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif ;
+    min-width: fit-content;
 }
 
 .header_wrapper{
@@ -156,7 +157,6 @@ body{
 
    border-radius: 16px;
    background: #b0ff57 ;
-   /* background: #7EA964; */
    color: #0D2636;
    box-shadow: -1rem 0 3rem #000;
 
@@ -255,8 +255,6 @@ body{
     background: url('./img/background/shattered-island.gif');
 }
 
-.contact_section{}
-
 .contact_header{
     text-align: center;
     color: #c6ff00;
@@ -336,9 +334,8 @@ body{
        flex-direction: column;
        height: 37rem;
        min-height: 500px;
-       width: 10rem; 
-       min-width: 400px;
-
+       width: 30vw;
+       min-width: 350px;
     
        transition: .3s;
     }
