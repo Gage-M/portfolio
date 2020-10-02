@@ -277,6 +277,16 @@ body{
     margin: .8rem;
 }
 
+.email_link{
+    color: #DFDFDF;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.email_link:hover{
+    color: #4e7934;
+}
+
 
 
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= DESKTOP *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
