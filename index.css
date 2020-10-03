@@ -69,6 +69,7 @@ body{
 
 .name_header{
     font-family: 'Kanit', sans-serif;
+    margin: 0;
 }
 
 /*=*=*=*=*=*=*=*=*=*=*=*  HEADER - INTRO  =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
@@ -81,8 +82,17 @@ body{
     padding: 1rem;
 }
 
+canvas{
+    width: 100vw;
+    height: 100vh;
+}
+
 .name_wrapper{
     color: #ffffff;
+}
+
+.intro_header{
+    margin-top: 0;
 }
 
 .link_wrapper{
@@ -106,9 +116,9 @@ body{
 }
 
 .ew_this_guy{
-    width: 10rem;
+    width: 8rem;
     border-radius: 300px;
-    height: 10rem;
+    height: 8rem;
     object-fit: cover;
     border: thin solid #95a19f;  
 }
@@ -149,7 +159,7 @@ body{
    display: flex;
    position: relative;
    flex-direction: column;
-   height: 37rem;
+   height: 42rem;
    min-height: 500px;
    width: 7rem; /*change size for desktop*/
    min-width: 250px;
@@ -193,14 +203,43 @@ body{
 }
 /*=*=*=*=*= SUB CAT of projects *=*=*=*=*/
 
+.card_link_wrapper{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.c_link_tag{
+    text-decoration: none;
+}
+
+.c_link_labels{
+    min-width: 35px;
+    margin-right: 1rem;
+    padding: .5rem .75rem .5rem .75rem;
+    background-color: #0D2636;
+    border: solid thin #95a19f;
+    color: #DFDFDF;
+    font-family: 'Lato', sans-serif;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.c_link_labels:hover{
+    background-color: #95a19f;
+    color: #32333B;
+}
+
 .img_wrapper{
     display: flex;
     justify-content: space-between;
 }
 
 .card_img{
+    min-height: 24vh;
+    width: 100%;
     object-fit: contain;
 }
+
 
 /*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
 
@@ -317,7 +356,6 @@ body{
 
     .info_wrapper{
         font-size: 1.05rem;
-        text-align: center;
         max-width: 40rem;
     }
 
@@ -342,7 +380,7 @@ body{
        display: flex;
        position: relative;
        flex-direction: column;
-       height: 37rem;
+       height: 43rem;
        min-height: 500px;
        width: 30vw;
        min-width: 350px;
