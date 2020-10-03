@@ -159,7 +159,7 @@ canvas{
    display: flex;
    position: relative;
    flex-direction: column;
-   height: 42rem;
+   height: 37rem;
    min-height: 500px;
    width: 7rem; /*change size for desktop*/
    min-width: 250px;
@@ -175,7 +175,7 @@ canvas{
 
 /*how much target card moves*/
 .card:hover{
-    transform: translateX(-1rem);
+    transform: translateY(-1rem);
 }
 /*how much every other card moves*/
 .card:hover~.card{
