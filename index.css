@@ -140,7 +140,7 @@ canvas{
 }
 
 .info_wrapper{
-    font-size: 2.2vh;
+    font-size: 2vh;
 }
 
 
@@ -159,12 +159,11 @@ canvas{
    display: flex;
    position: relative;
    flex-direction: column;
-   height: 37rem;
-   min-height: 500px;
+   height: 38rem;
+   min-height: 612px;
    width: 7rem; /*change size for desktop*/
    min-width: 250px;
    padding: 1.5rem;
-
    border-radius: 16px;
    background: #b0ff57 ;
    color: #0D2636;
@@ -208,23 +207,21 @@ canvas{
     margin-top: 2rem;
 }
 
-.c_link_tag{
-    text-decoration: none;
-}
 
-.c_link_labels{
+.c_link_tag{
     min-width: 35px;
     margin-right: 1rem;
     padding: .5rem .75rem .5rem .75rem;
     background-color: #0D2636;
     border: solid thin #95a19f;
+    text-decoration: none;
     color: #DFDFDF;
     font-family: 'Lato', sans-serif;
     border-radius: 7px;
     transition: .5s;
 }
 
-.c_link_labels:hover{
+.c_link_tag:hover{
     background-color: #95a19f;
     color: #32333B;
 }
