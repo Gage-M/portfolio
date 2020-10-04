@@ -52,7 +52,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif ;
-    min-width: fit-content;
+    max-width: fit-content;
 }
 
 .header_wrapper{
@@ -83,7 +83,7 @@ body{
 }
 
 canvas{
-    width: 100vw;
+    width: 100vw ;
     height: 100vh;
 }
 
@@ -140,7 +140,7 @@ canvas{
 }
 
 .info_wrapper{
-    font-size: 2vh;
+    font-size: 1.83vh;
 }
 
 
@@ -289,6 +289,7 @@ canvas{
     border-top: solid thin #c6ff00;
     margin-top: 3rem;
     background: url('./img/background/shattered-island.gif');
+    width: 100vw;
 }
 
 .contact_header{
