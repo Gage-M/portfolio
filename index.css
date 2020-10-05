@@ -52,7 +52,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif ;
-    max-width: fit-content;
 }
 
 .header_wrapper{
@@ -289,7 +288,6 @@ canvas{
     border-top: solid thin #c6ff00;
     margin-top: 3rem;
     background: url('./img/background/shattered-island.gif');
-    width: 100vw;
 }
 
 .contact_header{
@@ -353,12 +351,13 @@ canvas{
     }
 
     .info_wrapper{
-        font-size: 1.05rem;
-        max-width: 40rem;
+        font-size: 1.85vh;
+        max-width: 100vw;
+
     }
 
     .summary_section{
-        margin-top: 5rem;
+        margin-top: 2vh;
         place-content: center;
     }
 
@@ -417,6 +416,13 @@ canvas{
 }
 
 @media all and ( min-width: 800px){
+
+    .ew_this_guy {
+        width: 20vh;
+        height: 20vh;
+        border-radius: 100rem;
+    }
+
     .card{
         display: flex;
         position: relative;
@@ -427,5 +433,5 @@ canvas{
         min-width: 350px;
      
         transition: .3s;
-     }
+    }
 }
